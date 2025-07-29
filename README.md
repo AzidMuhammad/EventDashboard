@@ -52,23 +52,24 @@
 ---
 
 ## 📁 Project Structure
-
+```
 src/
-├── app/ # Next.js App Router
-│ ├── (auth)/login # Halaman login
-│ └── dashboard/ # Halaman utama dashboard
-│ ├── competitions/ # Manajemen kompetisi
-│ ├── finances/ # Modul keuangan
-│ ├── notifications/ # Modul notifikasi
-│ ├── participants/ # Manajemen peserta
-│ └── proposals/ # Modul proposal
-├── components/ # Komponen UI global
-├── modules/ # Logika bisnis per fitur
-├── lib/ # Helper & utilitas umum
-├── types/ # Tipe data TypeScript
-├── styles/ # Global styles (Tailwind)
-└── utils/ # Fungsi utilitas tambahan
-
+├── app/                      # Next.js App Router
+│   ├── (auth)/login/        # Halaman login
+│   └── dashboard/           # Halaman utama dashboard
+│       ├── competitions/    # Manajemen kompetisi
+│       ├── finances/        # Modul keuangan
+│       ├── notifications/   # Modul notifikasi
+│       ├── participants/    # Manajemen peserta
+│       └── proposals/       # Modul proposal
+│
+├── components/              # Komponen UI global
+├── modules/                 # Logika bisnis per fitur (Domain modules)
+├── lib/                     # Helper & utilitas umum
+├── types/                   # Tipe data global (TypeScript interfaces)
+├── styles/                  # Global styles (Tailwind CSS)
+└── utils/                   # Fungsi utilitas tambahan
+```
 ---
 
 ## ⚙️ Installation
