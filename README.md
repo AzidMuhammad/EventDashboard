@@ -53,22 +53,84 @@
 
 ## 📁 Project Structure
 ```
-src/
-├── app/                      # Next.js App Router
-│   ├── (auth)/login/        # Halaman login
-│   └── dashboard/           # Halaman utama dashboard
-│       ├── competitions/    # Manajemen kompetisi
-│       ├── finances/        # Modul keuangan
-│       ├── notifications/   # Modul notifikasi
-│       ├── participants/    # Manajemen peserta
-│       └── proposals/       # Modul proposal
+.
+├── .env.local
+├── .gitignore
+├── next.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+├── README.md
+├── tailwind.config.ts
+├── tsconfig.json
 │
-├── components/              # Komponen UI global
-├── modules/                 # Logika bisnis per fitur (Domain modules)
-├── lib/                     # Helper & utilitas umum
-├── types/                   # Tipe data global (TypeScript interfaces)
-├── styles/                  # Global styles (Tailwind CSS)
-└── utils/                   # Fungsi utilitas tambahan
+├── public/
+│   └── favicon.ico
+│
+├── src/
+│   ├── api/
+│   │   ├── auth/[[...nextauth]]/
+│   │   ├── competitions/
+│   │   │   └── ts.routes/
+│   │   ├── finances/
+│   │   │   └── ts.routes/
+│   │   ├── notifications/
+│   │   │   └── ts.routes/
+│   │   ├── participants/
+│   │   │   └── ts.routes/
+│   │   ├── proposals/
+│   │   │   └── ts.routes/
+│   │   └── telegram-webhook/
+│
+│   ├── app/
+│   │   ├── (auth)/login/
+│   │   │   └── page.tsx
+│   │   ├── dashboard/
+│   │   │   ├── competitions/
+│   │   │   │   └── page.tsx
+│   │   │   ├── finances/
+│   │   │   │   └── page.tsx
+│   │   │   ├── notifications/
+│   │   │   │   └── page.tsx
+│   │   │   ├── participants/
+│   │   │   │   └── page.tsx
+│   │   │   ├── proposals/
+│   │   │   │   └── page.tsx
+│   │   │   └── page.tsx
+│   │   ├── guest/
+│   │   ├── login/
+│   │   │   └── page.tsx
+│   │   └── favicon.ico
+│
+│   ├── components/
+│   │   ├── dashboard/
+│   │   │   ├── ActivityHeatmap.tsx
+│   │   │   ├── ChartStats.tsx
+│   │   │   ├── DashboardLayout.tsx
+│   │   │   ├── NotificationPanel.tsx
+│   │   │   ├── RecentActivity.tsx
+│   │   │   ├── StatCard.tsx
+│   │   │   ├── TimelineModern.tsx
+│   │   │   └── ActivitySidebarStats.tsx
+│   │   └── layout.tsx
+│
+│   ├── lib/
+│
+│   ├── modules/
+│   │   ├── Competitions/
+│   │   ├── Finances/
+│   │   ├── Notifications/
+│   │   ├── Participants/
+│   │   └── Proposals/
+│
+│   ├── styles/
+│   │   └── global.css
+│
+│   ├── types/
+│   │   └── index.ts
+│
+│   └── utils/
+
 ```
 ---
 
